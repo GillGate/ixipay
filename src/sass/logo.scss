@@ -1,0 +1,19 @@
+.logo {
+	text-align: center;
+
+	&__img {
+		&--main {
+			img {
+				width: 93px;
+				height: 135px;
+			}
+		}
+	}
+
+	&__caption {
+		font-weight: 800;
+		font-size: 22px;
+		line-height: 30px;
+		color: var(--color-black);
+	}
+}
