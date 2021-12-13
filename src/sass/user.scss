@@ -6,6 +6,11 @@
 		margin-top: 12px;
 	}
 
+	&__caption {
+		font-weight: 600;
+		font-size: 18px;
+	}
+
 	&__btn {
 		color: var(--color-blue);
 		font-size: 25px;
@@ -28,12 +33,45 @@
 	&__img {
 		margin-left: 20px;
 
+		img {
+			width: 43px;
+			height: 43px;
+		}
+
 		&--main {
 			margin-left: 26px;
 
 			img {
 				width: 74px;
 				height: 74px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.user {
+		&__btn {
+			font-size: 20px;
+			line-height: 25px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.user {
+		&__controls {
+			margin-top: 6px;
+		}
+
+		&__img {
+			margin-left: 10px;
+			
+			&--main {
+				img {
+					width: 43px;
+					height: 43px;
+				}
 			}
 		}
 	}

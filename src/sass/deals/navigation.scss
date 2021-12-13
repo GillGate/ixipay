@@ -1,0 +1,17 @@
+.navigation {
+	max-width: 320px;
+
+	&__item {
+		display: flex;
+		position: relative;
+		padding-left: 76px;
+		margin-bottom: 10px;
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		left: 4px;
+		transform: translateY(-50%);
+	}
+}

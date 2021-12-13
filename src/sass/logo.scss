@@ -2,6 +2,11 @@
 	text-align: center;
 
 	&__img {
+		img {
+			width: 52px;
+			height: 75px;
+		}
+		
 		&--main {
 			img {
 				width: 93px;
@@ -15,5 +20,18 @@
 		font-size: 22px;
 		line-height: 30px;
 		color: var(--color-black);
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.logo {
+		&__img {
+			&--main {
+				img {
+					width: 52px;
+					height: 75px;
+				}
+			}
+		}
 	}
 }

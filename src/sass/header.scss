@@ -7,3 +7,37 @@
 		z-index: 10;
 	}
 }
+
+@media screen and (max-width: 1440px) {
+	.header {
+		&__wrapper {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.header {
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+
+		&__nav {
+			order: 1;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		&__wrapper {
+			justify-content: center;
+		}
+
+		&__user {
+			// width: 100%;
+			margin: 0 30px;
+		}
+	}
+}

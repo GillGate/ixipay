@@ -1,4 +1,5 @@
 @use 'libs/bootstrap-grid.min.css';
+@use 'reset.scss';
 @use 'vars.scss';
 @use 'fonts.scss';
 @use 'smart-grid.scss';
@@ -9,6 +10,13 @@
 @use 'user.scss';
 @use 'header.scss';
 @use 'footer.scss';
+@use 'aside.scss';
+@use 'form.scss';
 @use 'main/intro.scss';
 @use 'main/robot.scss';
 @use 'main/approach.scss';
+@use 'deals/navigation.scss';
+@use 'deals/actionList.scss';
+@use 'deals/saving.scss';
+@use 'deals/deals.scss';
+@use 'interpretation.scss';

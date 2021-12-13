@@ -2,10 +2,12 @@
 	padding-top: 140px;
 	padding-bottom: 115px;
 	background: url(../img/approach-bg.svg) no-repeat center / cover;
+	position: relative;
+	z-index: 1;
 
 	&__wrapper {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	&__title {
@@ -88,6 +90,100 @@
 			background-color: var(--color-green);
 			border-radius: 50%;
 			margin-bottom: 146px;
+		}
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.approach {
+		&__list {
+			max-width: 450px;
+		}
+		
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.approach {
+		&__wrapper {
+			// justify-content: space-between;
+		}
+
+		&__list {
+			max-width: 350px;
+		}
+
+		&__step {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.approach {
+		&__wrapper {
+			justify-content: space-between;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.approach {
+		&__wrapper {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__list {
+			max-width: 500px;
+
+			&--seller {
+				margin-top: 100px;
+			}
+		}
+
+		&__item {
+			margin-top: 50px;
+		}
+
+		&__img {
+			img {
+				transform: scale(0.8);
+			}
+		}
+
+		&__text {
+			padding-left: 140px;
+			font-size: 15px;
+    		line-height: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.approach {
+		padding-top: 70px;
+		padding-bottom: 50px;
+
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		&__list {
+			&--seller {
+				margin-top: 70px;
+			}
+		}
+
+		&__item {
+			margin-top: 35px;
+		}
+
+		&__img {
+			left: 40px;
+			img {
+				transform: scale(0.7);
+			}
 		}
 	}
 }

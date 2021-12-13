@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Покупатель</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__wrapper">
+				<a href="/" class="logo header__logo">
+					<div class="logo__img">
+						<img src="img/logo.svg" width="52" height="75" alt="Логотип Ixipay">
+					</div>
+					<span class="logo__caption">
+						IXIPAY
+					</span>
+				</a>
+				<div class="nav header__nav">
+					<a href="./deals.html" class="nav__link">Сделки</a>
+					<a href="./seller.html" class="nav__link">Продавец</a>
+					<a href="./buyer.html" class="nav__link">Покупатель</a>
+				</div>
+				<div class="user header__user">
+					<div class="user__controls">
+						<p class="user__caption">
+							Приветствую Вас, Иван Иванов
+						</p>
+					</div>
+					<div class="user__img">
+						<img src="img/user.svg" width="43" height="43" alt="Пользователь">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="body body--interpretation">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-sm-3">
+					<aside class="aside">
+						<button class="aside__chat">
+							Чат покупателя
+						</button>
+						<div class="aside__label">
+							<span>Id сделки:</span>
+							<input type="text" class="input form__input" value="123456789518282827">
+						</div>
+						<div class="aside__item aside__item--big">
+							<div class="aside__img">
+								<img src="img/icon-safe-pay.svg" width="71" height="70" alt="">
+							</div>
+							<p class="aside__text">Проверить товар вживую с помощью агента</p>
+						</div>
+						<div class="aside__item">
+							<div class="aside__img">
+								<img src="img/icon-product-cart.svg" width="50" height="56" alt="">
+							</div>
+							<p class="aside__text">Товар получен</p>
+						</div>
+						<div class="aside__item">
+							<div class="aside__img">
+								<img src="img/icon-confirm.svg" width="50" height="56" alt="">
+							</div>
+							<p class="aside__text">Оплатить</p>
+						</div>
+						<div class="aside__label">
+							<span>Оплата комиссии сделки:</span>
+							<select class="select form__select" name="fee">
+								<option value="" disabled selected>Выберите</option>
+								<option value="1">Я</option>
+								<option value="2">50/50</option>
+								<option value="3">Покупатель</option>
+							</select>
+						</div>
+					</aside>
+				</div>
+				<div class="col-sm-9">
+					<main class="main">
+						<div class="interpretation">
+							<h1 class="interpretation__title">Трактация безопасной сделки</h1>
+							<ul class="interpretation__list">
+								<li class="interpretation__item interpretation__item--unpaid">
+									<div class="interpretation__img">
+										<img src="img/icon-packages.svg" width="76" height="60" alt="">
+									</div>
+									<p class="interpretation__text">Товар не оплачен</p>
+								</li>
+								<li class="interpretation__item interpretation__item--process">
+									<div class="interpretation__img">
+										<img src="img/icon-cart.svg" width="76" height="88" alt="">
+									</div>
+									<p class="interpretation__text">Товар в пути</p>
+								</li>
+								<li class="interpretation__item interpretation__item--receive">
+									<div class="interpretation__img">
+										<img src="img/icon-gift.svg" width="95" height="82" alt="">
+									</div>
+									<p class="interpretation__text">Товар получен</p>
+								</li>
+							</ul>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row justify-content-between footer__wrapper">
+				<div class="col-xs-2 col-sm-6 col-lg-4 col-xl-auto">
+					<div class="logo footer__logo">
+						<span class="logo__caption">
+							IXIPAY
+						</span>
+					</div>
+				</div>
+				<div class="col-xs-10 col-sm-6 col-lg-4 col-xl-auto">
+					<div class="footer__contacts">
+						<p class="footer__title">Наши контакты</p>
+						<a href="tel:89876543210" class="footer__contactsLink">8 (987) 654 32 10</a>
+						<a href="mailto:ixipay@info.ru" class="footer__contactsLink">ixipay@info.ru</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-lg-4 col-xl-auto">
+					<div class="footer__social">
+						<p class="footer__title">Мы в социальных сетях</p>
+						<div class="footer__socialWrapper">
+							<a href="#" class="footer__socialLink">
+								<img src="img/social-vk.svg" alt="Вконтаке">
+							</a>
+							<a href="#" class="footer__socialLink">
+								<img src="img/social-fb.svg" alt="Facebook">
+							</a>
+							<a href="#" class="footer__socialLink">
+								<img src="img/social-ig.svg" alt="Instagram">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-xl-auto">
+					<div class="footer__pay">
+						<div class="footer__payItem">
+							<img src="img/footer-mir.png" alt="">
+						</div>
+						<div class="footer__payItem">
+							<img src="img/footer-mc.png" alt="">
+						</div>
+						<div class="footer__payItem">
+							<img src="img/footer-visa.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-between footer__foot">
+				<div class="col-xs-12 col-sm-auto">
+					<div class="footer__text">Все права защищены. © 2021</div>
+				</div>
+				<div class="col-xs-12 col-sm-auto">
+					<a href="#" class="footer__text footer__text--policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/all.js"></script>
+</body>
+</html>

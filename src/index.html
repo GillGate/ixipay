@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="wrapper">
 			<div class="header__wrapper">
 				<div class="logo header__logo">
 					<div class="logo__img logo__img--main">
@@ -19,9 +19,9 @@
 					</span>
 				</div>
 				<div class="nav header__nav">
-					<a href="#" class="nav__link">Lorem</a>
-					<a href="#" class="nav__link">Ipsum</a>
-					<a href="#" class="nav__link">Lorem Ipsum</a>
+					<a href="./deals.html" class="nav__link">Сделки</a>
+					<a href="./seller.html" class="nav__link">Продавец</a>
+					<a href="./buyer.html" class="nav__link">Покупатель</a>
 				</div>
 				<div class="user header__user">
 					<div class="user__controls">
@@ -40,33 +40,38 @@
 		</div>
 	</header>
 	<section class="intro">
-		<div class="container">
+		<div class="wrapper">
 			<div class="intro__wrapper">
 				<div class="intro__info">
-					<h1 class="h1 intro__title">Сервис безопасных покупок</h1>
-					<p class="p intro__text">
-						Покупай или продавай безопасно, не рискуя своими деньгами. Мы сделаем все, чтобы Ваша сделка была честной.
-					</p>
-					<a href="#" class="button intro__btn">
-						Подробнее
-					</a>
+					<div class="intro__parallax intro__beforeElement"></div>
+					<div class="animInit fadeInLeft">
+						<h1 class="h1 intro__title">Сервис безопасных покупок</h1>
+						<p class="p intro__text">
+							Покупай или продавай безопасно, не рискуя своими деньгами. Мы сделаем все, чтобы Ваша сделка была честной.
+						</p>
+						<a href="#" class="button intro__btn">
+							Подробнее
+						</a>
+					</div>
+					<div class="intro__parallax intro__afterElement"></div>
 				</div>
 				<div class="robot intro__robot">
 					<div class="robot__img">
 						<img src="img/robot-main.png" alt="">
 					</div>
+					<div class="robot__parallax"></div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="approach">
-		<div class="container">
+		<div class="wrapper">
 			<h2 class="h2 approach__title">
 					К каждому клиенту у нас индивидуальный подход. <br>
 				Мы не оставим вас в беде
 			</h2>
 			<div class="approach__wrapper">
-				<div class="approach__list">
+				<div class="animInit approach__list approach__list--buyer">
 					<h3 class="h3 approach__listTitle">Для покупателя</h3>
 					<ul class="approach__listWrapper">
 						<li class="approach__item">
@@ -89,7 +94,7 @@
 						</li>
 						<li class="approach__item">
 							<div class="approach__img">
-								<img src="img/icon-receive.svg" alt="">
+								<img src="img/icon-gift.svg" alt="">
 							</div>
 							<p class="approach__text">Получает посылку</p>
 						</li>
@@ -101,7 +106,7 @@
 					<li class="approach__stepItem">3</li>
 					<li class="approach__stepItem">4</li>
 				</ul>
-				<div class="approach__list">
+				<div class="animInit approach__list approach__list--seller">
 					<h3 class="h3 approach__listTitle">Для продавца</h3>
 					<ul class="approach__listWrapper">
 						<li class="approach__item">
@@ -112,7 +117,7 @@
 						</li>
 						<li class="approach__item">
 							<div class="approach__img">
-								<img src="img/icon-cart.svg" alt="">
+								<img src="img/icon-cart-full.svg" alt="">
 							</div>
 							<p class="approach__text">Отправляет все подтверждающие факты о том, что у продавца есть товар</p>
 						</li>
@@ -134,37 +139,39 @@
 		</div>
 	</section>
 	<footer class="footer">
-		<div class="container">
+		<div class="wrapper">
 			<div class="row justify-content-between footer__wrapper">
-				<div class="col-auto">
+				<div class="col-xs-2 col-sm-6 col-lg-4 col-xl-auto">
 					<div class="logo footer__logo">
 						<span class="logo__caption">
 							IXIPAY
 						</span>
 					</div>
 				</div>
-				<div class="col-auto">
+				<div class="col-xs-10 col-sm-6 col-lg-4 col-xl-auto">
 					<div class="footer__contacts">
 						<p class="footer__title">Наши контакты</p>
 						<a href="tel:89876543210" class="footer__contactsLink">8 (987) 654 32 10</a>
 						<a href="mailto:ixipay@info.ru" class="footer__contactsLink">ixipay@info.ru</a>
 					</div>
 				</div>
-				<div class="col-auto">
-					<p class="footer__title">Мы в социальных сетях</p>
+				<div class="col-xs-12 col-sm-12 col-lg-4 col-xl-auto">
 					<div class="footer__social">
-						<a href="#" class="footer__socialLink">
-							<img src="img/social-vk.svg" alt="Вконтаке">
-						</a>
-						<a href="#" class="footer__socialLink">
-							<img src="img/social-fb.svg" alt="Facebook">
-						</a>
-						<a href="#" class="footer__socialLink">
-							<img src="img/social-ig.svg" alt="Instagram">
-						</a>
+						<p class="footer__title">Мы в социальных сетях</p>
+						<div class="footer__socialWrapper">
+							<a href="#" class="footer__socialLink">
+								<img src="img/social-vk.svg" alt="Вконтаке">
+							</a>
+							<a href="#" class="footer__socialLink">
+								<img src="img/social-fb.svg" alt="Facebook">
+							</a>
+							<a href="#" class="footer__socialLink">
+								<img src="img/social-ig.svg" alt="Instagram">
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="col-auto">
+				<div class="col-xs-12 col-xl-auto">
 					<div class="footer__pay">
 						<div class="footer__payItem">
 							<img src="img/footer-mir.png" alt="">
@@ -179,14 +186,15 @@
 				</div>
 			</div>
 			<div class="row justify-content-between footer__foot">
-				<div class="col-auto">
+				<div class="col-xs-12 col-sm-auto">
 					<div class="footer__text">Все права защищены. © 2021</div>
 				</div>
-				<div class="col-auto">
+				<div class="col-xs-12 col-sm-auto">
 					<a href="#" class="footer__text footer__text--policy">Политика конфиденциальности</a>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<script src="js/all.js"></script>
 </body>
 </html>

@@ -4,30 +4,34 @@
 
 	&__wrapper {
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&__info {
 		position: relative;
 		z-index: 10;
+	}
 
-		&::before, &::after {
-			content: '';
-			width: 235px;
-			height: 200px;
-			background: no-repeat center / contain;
-			position: absolute;
-		}
+	&__parallax {
+		content: '';
+		display: block;
+		width: 235px;
+		height: 200px;
+		background: no-repeat center / contain;
+		position: absolute;
+		z-index: -1;
+	}
 
-		&::before {
-			background-image: url(../img/intro-before.svg);
-			top: -80px;
-			transform: translateX(-100%);
-		}
+	&__beforeElement {
+		background-image: url(../img/intro-before.svg);
+		top: -80px;
+		left: -200px;
+	}
 
-		&::after {
-			background-image: url(../img/intro-after.svg);
-			transform: translateX(60%);
-		}
+	&__afterElement {
+		background-image: url(../img/intro-after.svg);
+		bottom: 0;
+		right: 40px;
 	}
 
 	&__text {
@@ -37,5 +41,33 @@
 
 	&__btn {
 		margin-top: 46px;
+		font-size: 25px;
 	}
+}
+
+@media screen and (max-width: 1200px) {
+	.intro {
+		&__wrapper {
+			justify-content: center;
+		}
+
+		&__info {
+			text-align: center;
+		}
+
+		&__afterElement {
+			right: -160px;
+			bottom: -40px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.intro {
+		padding-top: 40px;
+
+		&__parallax {
+			display: none;
+		}
+	}	
 }

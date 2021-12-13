@@ -1,0 +1,40 @@
+.saving {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 58px;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-left: 84px;
+		padding: 24px 20px 24px 70px;
+		color: var(--color-white);
+		background-color: var(--color-purple);
+		border-radius: 10px;
+		position: relative;
+	}
+
+	&__img {
+		width: 90px;
+		height: 90px;
+		position: absolute;
+		top: 50%;
+		left: -40px;
+		transform: translateY(-50%);
+	}
+
+	&__info {
+		font-weight: 700;
+	}
+
+	&__title {
+		display: block;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	&__count {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
