@@ -72,3 +72,46 @@
 		text-transform: uppercase;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.interpretation {
+		&__title {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		&__list {
+			margin-top: 40px;
+			display: block;
+
+			&::after {
+				width: 9px;
+				height: 90%;
+				left: 50%;
+				top: 0px;
+				transform: translateX(-50%);
+			}
+		}
+
+		&__item {
+			margin-bottom: 40px;
+		}
+
+		&__text {
+			background-color: var(--color-white);
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.interpretation {
+		margin-top: 60px;
+
+		&__title {
+			font-size: 17px;
+			line-height: 20px;
+		}
+	}
+}

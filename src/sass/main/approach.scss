@@ -2,6 +2,7 @@
 	padding-top: 140px;
 	padding-bottom: 115px;
 	background: url(../img/approach-bg.svg) no-repeat center / cover;
+	background-size: 80%;
 	position: relative;
 	z-index: 1;
 
@@ -105,10 +106,6 @@
 
 @media screen and (max-width: 1400px) {
 	.approach {
-		&__wrapper {
-			// justify-content: space-between;
-		}
-
 		&__list {
 			max-width: 350px;
 		}
@@ -121,6 +118,8 @@
 
 @media screen and (max-width: 1200px) {
 	.approach {
+		background-size: cover;
+
 		&__wrapper {
 			justify-content: space-between;
 		}
@@ -162,6 +161,7 @@
 
 @media screen and (max-width: 768px) {
 	.approach {
+		background: none;
 		padding-top: 70px;
 		padding-bottom: 50px;
 
@@ -176,14 +176,31 @@
 		}
 
 		&__item {
-			margin-top: 35px;
+			display: block;
+			max-width: 350px;
+			margin: 35px auto 0;
 		}
 
 		&__img {
-			left: 40px;
+			position: static;
+			transform: none;
 			img {
 				transform: scale(0.7);
 			}
+		}
+
+		&__text {
+			padding: 18px 20px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.approach {
+		&__item {
+			margin-top: 20px;
+			max-width: 300px;
 		}
 	}
 }

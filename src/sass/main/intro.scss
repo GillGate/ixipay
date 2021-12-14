@@ -55,9 +55,23 @@
 			text-align: center;
 		}
 
+		&__text {
+			margin: 20px auto;
+		}
+
 		&__afterElement {
 			right: -160px;
 			bottom: -40px;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.intro {
+		&__btn {
+			margin-top: 30px;
+			font-size: 22px;
+			line-height: 24px;
 		}
 	}
 }

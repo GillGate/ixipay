@@ -1,0 +1,121 @@
+.auth {
+	max-width: 674px;
+	padding: 62px 72px;
+	background-color: var(--color-green);
+	border-radius: 20px;
+
+	&__controls {
+		border-bottom: 5px solid var(--color-white);
+		display: flex;
+		margin-bottom: 32px;
+	}
+
+	&__switch {
+		width: 50%;
+		border-radius: 10px;
+		font-size: 22px;
+		line-height: 62px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: rgba(255, 255, 255, 0.2);
+		cursor: pointer;
+		transition: background-color .5s ease;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.6);
+		}
+	}
+
+	&__form {
+		&--login {
+			display: none;
+		}
+	}
+
+	&__label {
+		display: block;
+		width: 100%;
+		font-size: 20px;
+		line-height: 27px;
+		margin-bottom: 16px;
+	}
+
+	&__input {
+		display: block;
+		max-width: 100%;
+		margin-top: 10px;
+		background-color: var(--color-white);
+	}
+
+	&__btn {
+		display: block;
+		margin: 40px auto 0;
+		margin-top: 40px;
+		border-color: var(--color-purple);
+		color: var(--color-white);
+
+		&:hover {
+			color: var(--color-white);
+			background-color: var(--color-purple);
+		}
+
+		&::before {
+			background-color: var(--color-purple);
+		}
+	}
+
+	#auth-reg:checked {
+		~ .auth__controls > label[for=auth-reg] {
+			background-color: rgba(255, 255, 255, 1);
+		}
+
+		~ .auth__form--reg {
+			display: block;
+		}
+
+		~ .auth__form--login {
+			display: none;
+		}
+	}
+
+	#auth-login:checked {
+		~ .auth__controls > label[for=auth-login] {
+			background-color: rgba(255, 255, 255, 1);
+		}
+
+		~ .auth__form--login {
+			display: block;
+		}
+
+		~ .auth__form--reg {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.auth {
+		padding: 30px 36px;
+
+		&__controls {
+			margin-bottom: 20px;
+		}
+
+		&__switch {
+			font-size: 14px;
+		}
+
+		&__label {
+			font-size: 14px;
+		}
+
+		&__input {
+			margin-top: 4px;
+		}
+
+		&__btn {
+			margin-top: 20px;
+		}
+	}
+}

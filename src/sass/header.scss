@@ -29,11 +29,16 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	.header {
 		&__wrapper {
 			justify-content: center;
 		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header {
 
 		&__user {
 			// width: 100%;

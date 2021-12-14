@@ -15,3 +15,18 @@
 		transform: translateY(-50%);
 	}
 }
+
+@media screen and (max-width: 992px) {
+	.navigation {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 80%;
+		margin: 0 auto 20px;
+
+		&__item {
+			min-width: 180px;
+			margin: 0 20px 20px;
+		}
+	}
+}

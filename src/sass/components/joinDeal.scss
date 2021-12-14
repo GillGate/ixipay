@@ -1,0 +1,57 @@
+.joinDeal {
+	width: 100%;
+	max-width: 520px;
+	padding: 46px 74px;
+
+	&--done {
+		padding: 40px 46px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__info {
+		margin-left: 48px;
+	}
+
+	&__title {
+		font-weight: 600;
+	}
+
+	&__caption {
+		margin-top: 14px;
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	&__form {
+		max-width: 306px;
+	}
+
+	&__input {
+		margin: 26px 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.joinDeal {
+		&__form {
+			max-width: 254px;
+		}
+
+		&__btn {
+			padding: 12px 36px 12px 86px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.joinDeal {
+		&__caption {
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}

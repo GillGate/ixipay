@@ -1,0 +1,123 @@
+.searchBox {
+	padding: 10px 43px 32px 43px;
+
+	&__form {
+		padding: 0 30px 28px;
+		max-width: 308px;
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 10px;
+
+		.select {
+			margin-top: 12px;
+		}
+	}
+
+	&__btn {
+		margin-top: 26px;
+		padding: 12px 36px 12px 86px;
+
+		&::before {
+			left: 6px;
+		}
+	}
+
+	&__result {
+		width: 700px;
+		padding-top: 18px;
+		border-top: 1px solid var(--color-black);
+	}
+
+	&__table {
+		width: 100%;
+		border-radius: 20px;
+
+		tr {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		thead tr {
+			td {
+				padding: 2px 14px;
+				text-align: center;
+			}
+		}
+
+		tbody tr{
+			background-color: var(--color-green-light);
+			border: none;
+			position: relative;
+
+			&::after {
+				content: '';
+				display: block;
+				height: 1px;
+				padding: 0 15px;
+				box-sizing: border-box;
+				background-color: #BCBCBC;
+				position: absolute;
+				bottom: 0;
+				left: 15px;
+				right: 15px;
+			}
+
+			&:last-child {
+				&::after {
+					display: none;
+				}
+
+				td:first-child {
+					border-radius: 0 0 0 20px;
+				}
+
+				td:last-child {
+					border-radius: 0 0 20px 0;
+				}
+			}
+
+			td {
+
+			}
+		}
+	}
+
+	&__rating {
+		width: 60px;
+		height: 12px;
+		background-color: #DBDBDB;
+		mask: url(../img/icon-star.svg) left / contain;
+		margin: 0 auto;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__ratingLevel {
+		width: 40%;
+		height: 12px;
+		background-color: #FEB732;
+		mask: url(../img/icon-star-active.svg) left / contain;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	&__action {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.searchBox {
+		min-width: 100px;
+		width: 100%;
+
+		&__result {
+			width: auto;
+		}
+	}
+}

@@ -35,11 +35,9 @@ button {
 	&--interpretation {
 		padding-bottom: 130px;
 	}
-}
 
-.main {
-	&__caption {
-		margin: 66px 0;
+	&--element {
+		padding: 40px;
 	}
 }
 
@@ -98,16 +96,7 @@ table {
 		}
 	}
 
-	tbody {
-		padding: 0 10px;
-		padding-bottom: 48px;
-
-		tr:last-child {
-			margin-bottom: 48px;
-		}
-	}
-
-	tr {
+	tbody tr {
 		font-size: 20px;
 		line-height: 27px;
 		border-bottom: 1px solid var(--color-black);
@@ -139,11 +128,9 @@ table {
 
 .button {
 	display: inline-block;
-	padding-left: 86px;
-	padding-right: 36px;
-	min-height: 66px;
+	padding: 18px 36px 18px 86px;
 	font-size: 22px;
-	line-height: 60px;
+	line-height: 28px;
 	font-weight: 700;
 	color: var(--color-blue);
 	border: 5px solid var(--color-green);
@@ -185,6 +172,12 @@ table {
 }
 
 @media screen and (max-width: 992px) {
+	.body {
+		&--interpretation {
+			padding-bottom: 60px;
+		}
+	}
+
 	.wrapper {
 		padding-left: 40px;
 		padding-right: 40px;
@@ -208,5 +201,65 @@ table {
 	.p {
 		font-size: 20px;
     	line-height: 26px;
+	}
+
+	.item {
+		font-size: 15px;
+    	line-height: 20px;
+	}
+
+	.table {
+		thead tr {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		tr {
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		td {
+			padding: 14px 18px;
+		}
+	}
+
+	.button {
+		font-size: 15px;
+		line-height: 26px;
+		border-width: 3px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.body {
+		&--interpretation {
+			padding-bottom: 30px;
+		}
+	}
+
+	.h1 {
+		font-size: 26px;
+		line-height: 34px;
+	}
+
+	.h2 {
+		font-size: 19px;
+		line-height: 22px;
+	}
+
+	.h3 {
+		font-size: 17px;
+		line-height: 20px;
+	}
+
+	.p {
+		font-size: 16px;
+    	line-height: 20px;
+	}
+
+	.item {
+		font-size: 13px;
+    	line-height: 16px;
 	}
 }
